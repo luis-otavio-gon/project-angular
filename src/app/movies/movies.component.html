@@ -1,0 +1,18 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+  <h1>
+    Todos os Filmes
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="row">
+          <div *ngFor="let movie of movies" class="col-sm-6 col-xs-12">
+
+            <mt-movie [movie]="movie"> </mt-movie>
+
+          </div>
+  </div>
+</section>

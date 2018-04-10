@@ -1,0 +1,13 @@
+<a [routerLink]="['/movies',movie.id]">
+  <div class="place-info-box">
+    <span class="place-info-box-icon"><img [src]="movie.imagePath" /></span>
+
+    <div class="place-info-box-content">
+      <span class="place-info-box-text"> {{movie.name}}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i> {{movie.rating}}</span>
+      <span class="place-info-box-detail">{{movie.category}}</span>
+      <span class="place-info-box-detail">{{movie.duration}}</span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+</a>
