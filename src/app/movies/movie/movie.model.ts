@@ -5,4 +5,5 @@ export interface Movie {
   duration: string
   rating: string
   imagePath: string
+  about: string
 }

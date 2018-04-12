@@ -16,7 +16,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { MenuComponent } from './movie-detail/menu/menu.component';
 import { ShoppingCartComponent } from './movie-detail/shopping-cart/shopping-cart.component';
 import { MenuItemComponent } from './movie-detail/menu-item/menu-item.component'
-
+import { ReviewsComponent } from './movie-detail/reviews/reviews.component'
+import { ShoppingCartService } from './movie-detail/shopping-cart/shopping-cart.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +29,15 @@ import { MenuItemComponent } from './movie-detail/menu-item/menu-item.component'
     MovieDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [MoviesService],
+  providers: [MoviesService, ShoppingCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
