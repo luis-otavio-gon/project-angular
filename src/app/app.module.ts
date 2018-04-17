@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-
+import {FormsModule} from '@angular/forms'
 import {ROUTES} from './app.routes'
 
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { ShoppingCartComponent } from './movie-detail/shopping-cart/shopping-car
 import { MenuItemComponent } from './movie-detail/menu-item/menu-item.component'
 import { ReviewsComponent } from './movie-detail/reviews/reviews.component'
 import { ShoppingCartService } from './movie-detail/shopping-cart/shopping-cart.service'
+import { OrderComponent } from './order/order.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +31,13 @@ import { ShoppingCartService } from './movie-detail/shopping-cart/shopping-cart.
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [MoviesService, ShoppingCartService],

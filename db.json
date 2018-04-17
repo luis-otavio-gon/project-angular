@@ -142,7 +142,7 @@
       "name": "Alugar Guardiões da Galáxia Vol. 2",
       "description": "Assista por 3 dias.",
       "price": 3.9,
-      "restaurantId": "guardioes"
+      "movieId": "guardioes"
     },
     {
       "id": "compra-guardioes",
